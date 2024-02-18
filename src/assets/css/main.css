@@ -1,0 +1,39 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0px;
+    position: relative;
+    color: #dddddd;
+    background-color: #222222;
+    font-size: 24px;
+}
+
+a {
+    color: #d7f8ff;
+}
+
+.content {
+    padding: 50px 15%;
+}
+
+.content-title {
+    margin: 0 auto;
+}
+
+.content-text {
+    margin: 0 auto;
+}
+
+.content h2 {
+    font-size: 81px;
+    font-family: "Caveat", cursive;
+    text-align: center;
+}
+
+.content .pre-text {
+    text-align: center;
+    font-size: 18px;
+    color: #aaaaaa;
+}
