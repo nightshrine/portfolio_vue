@@ -57,7 +57,6 @@ const getImgPath = (imgPath: string) => {
 </script>
 
 <style scoped>
-@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
 
 #projects h3 {
     font-size: 56px;

@@ -40,7 +40,6 @@ const aboutInfoList: IAboutInfo[] = getAboutInfoList();
 </script>
 
 <style scoped>
-@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
 
 .content {
     padding: 50px 15%;

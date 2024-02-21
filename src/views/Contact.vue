@@ -23,5 +23,5 @@ import { RouterView } from "vue-router";
 </template>
 
 <style scoped>
-@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+
 </style>

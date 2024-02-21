@@ -34,7 +34,6 @@ const workInfoList: IWorksInfo[]  = getWorksInfoList();
 </script>
 
 <style scoped>
-@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
 
 #works h3 {
     font-size: 54px;
