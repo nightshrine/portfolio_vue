@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap');
+
 html {
     scroll-behavior: smooth;
 }
@@ -5,13 +8,17 @@ html {
 body {
     margin: 0px;
     position: relative;
-    color: #dddddd;
-    background-color: #222222;
+    color: #222222;
+    background-color: #ffffff;
     font-size: 24px;
+    font-family: "Zen Old Mincho", serif;
 }
 
 a {
-    color: #d7f8ff;
+    color: #54c7e0;
+}
+a:visited {
+    color: #79949a;
 }
 
 .content {
@@ -28,6 +35,12 @@ a {
 
 .content h2 {
     font-size: 81px;
+    font-family: "Caveat", cursive;
+    text-align: center;
+}
+
+.content h3 {
+    font-size: 54px;
     font-family: "Caveat", cursive;
     text-align: center;
 }
