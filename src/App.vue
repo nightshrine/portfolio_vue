@@ -6,7 +6,7 @@ import { RouterLink, RouterView } from "vue-router";
     <header>
         <RouterLink :to="{ name: 'top' }" id="top-button">
             <img src="./assets/image/myicon_circle.ico" alt="山本隼輔の写真" />
-            TOP
+            Top
         </RouterLink>
         <nav>
             <ul>
@@ -41,11 +41,10 @@ import { RouterLink, RouterView } from "vue-router";
 
 a {
     text-decoration: none;
-    color: #dddddd;
+    color: #222222;
 }
 .content a {
     text-decoration: underline;
-    color: #dddddd;
 }
 
 button:hover {
@@ -84,7 +83,7 @@ nav ul {
     display: flex;
     height: 30px;
     align-items: center;
-    border-left: solid 2px #dddddd;
+    border-left: solid 1px #222222;
     font-size: 36px;
 }
 
@@ -93,6 +92,6 @@ nav li {
     height: 30px;
     display: flex;
     align-items: center;
-    border-right: solid 2px #dddddd;
+    border-right: solid 1px #222222;
 }
 </style>

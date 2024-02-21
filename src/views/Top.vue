@@ -1,6 +1,6 @@
 <template>
     <video autoplay muted loop id="myVideo">
-        <source src="../video/whiteball_black.mov" type="video/mp4" />
+        <!-- <source src="../video/whiteball_black.mov" type="video/mp4" /> -->
     </video>
     <div id="main">
         <div id="main-text">
