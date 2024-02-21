@@ -5,7 +5,7 @@
         </div>
         <div class="content-text" id="works-text">
             <div class="work-company" v-for="workInfo in workInfoList">
-                <h3>{{ workInfo.name }}</h3>
+                <div id="work-content-title">{{ workInfo.name }}</div>
                 <div class="work-content">
                     <div class="work-description">
                         <ul>
@@ -35,7 +35,7 @@ const workInfoList: IWorksInfo[]  = getWorksInfoList();
 
 <style scoped>
 
-#works h3 {
+#work-content-title {
     font-size: 54px;
     text-align: center;
     margin: 0 auto;
@@ -44,7 +44,7 @@ const workInfoList: IWorksInfo[]  = getWorksInfoList();
 .work-company {
     margin: 100px 0px;
     padding: 20px;
-    border: solid 2px #dddddd;
+    box-shadow: 2px 3px 5px #222222;
     border-radius: 20px;
 }
 

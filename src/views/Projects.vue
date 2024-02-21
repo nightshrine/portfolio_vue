@@ -4,7 +4,7 @@
             <h2>Projects</h2>
         </div>
         <div class="content-text" id="projects-text">
-            詳しくは<a href="https://github.com/nightshrine"
+            ※詳しくは<a href="https://github.com/nightshrine"
                 >Githubのマイページ</a
             >をご覧ください。
             <p class="pre-text">
@@ -12,7 +12,7 @@
             </p>
             <div class="project-frame" v-for="projectInfo in projectsInfoList">
                 <div class="project-content">
-                    <h3>~{{ projectInfo.title }}~</h3>
+                    <div id="project-content-title">~{{ projectInfo.title }}~</div>
                     <div class="project-image">
                         <img
                             v-if="projectInfo.imgPath"
@@ -58,7 +58,7 @@ const getImgPath = (imgPath: string) => {
 
 <style scoped>
 
-#projects h3 {
+#project-content-title {
     font-size: 56px;
     margin: 10px auto;
     text-align: center;
@@ -66,7 +66,7 @@ const getImgPath = (imgPath: string) => {
 
 .project-frame {
     margin-bottom: 50px;
-    border: solid 2px #dddddd;
+    box-shadow: 2px 3px 5px #222222;
     border-radius: 20px;
     padding-top: 10px;
     overflow: hidden;

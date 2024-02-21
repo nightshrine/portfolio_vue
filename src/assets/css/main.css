@@ -15,7 +15,10 @@ body {
 }
 
 a {
-    color: #d7f8ff;
+    color: #54c7e0;
+}
+a:visited {
+    color: #79949a;
 }
 
 .content {
@@ -32,6 +35,12 @@ a {
 
 .content h2 {
     font-size: 81px;
+    font-family: "Caveat", cursive;
+    text-align: center;
+}
+
+.content h3 {
+    font-size: 54px;
     font-family: "Caveat", cursive;
     text-align: center;
 }
