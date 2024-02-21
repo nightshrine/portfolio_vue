@@ -5,12 +5,10 @@
     <div id="main">
         <div id="main-text">
             <h2>Web Application Developper</h2>
-            <h1 id="first-name">Shunsuke</h1> 
+            <h1 id="first-name">Shunsuke</h1>
             <h1 id="last-name">Yamamoto</h1>
         </div>
-        <div id="main-image">
-            <img src="../assets/image/myicon_circle.ico" alt="山本隼輔の写真" />
-        </div>
+        <div id="main-image"></div>
     </div>
     <RouterView />
 </template>
@@ -47,7 +45,7 @@ import { RouterView } from "vue-router";
 }
 
 #main-text h2 {
-    color: #8e84ff;
+    color: #888888;
     font-size: 54px;
 }
 
@@ -57,7 +55,12 @@ import { RouterView } from "vue-router";
 }
 
 #main-image {
-    height: 200px;
+    height: 256px;
+    width: 256px;
+    background-image: url("../assets/image/myicon_circle.ico");
+    background-color: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0px 0px 30px #222222;
 }
 
 #main #first-name {
