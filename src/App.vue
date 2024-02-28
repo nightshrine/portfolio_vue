@@ -2,7 +2,7 @@
     <header>
         <RouterLink :to="{ name: 'top' }" id="top-button">
             <img src="./assets/image/myicon_circle.ico" alt="山本隼輔の写真" />
-            Top
+            <p class="header-text">Top</p>
         </RouterLink>
         <nav>
             <ul>
