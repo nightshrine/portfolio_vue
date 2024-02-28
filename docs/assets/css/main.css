@@ -50,3 +50,31 @@ a:visited {
     font-size: 18px;
     color: #aaaaaa;
 }
+
+/* ヘッダーの色が薄くなる場合、色が濃くなる場合 */
+.header-fade {
+    opacity: 0.3;
+    animation: header-fade 0.5s ease-out;
+}
+.header-appear {
+    opacity: 1;
+    animation: header-appear 0.5s ease-out;
+}
+
+@keyframes header-fade {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.2;
+    }
+}
+
+@keyframes header-appear {
+    0% {
+        opacity: 0.2;
+    }
+    100% {
+        opacity: 1;
+    }
+}
