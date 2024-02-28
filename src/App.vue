@@ -1,7 +1,3 @@
-<script setup lang="ts">
-import { RouterLink, RouterView } from "vue-router";
-</script>
-
 <template>
     <header>
         <RouterLink :to="{ name: 'top' }" id="top-button">
@@ -11,24 +7,24 @@ import { RouterLink, RouterView } from "vue-router";
         <nav>
             <ul>
                 <li>
-                    <RouterLink :to="{ name: 'about' }" id="about"
-                        >About</RouterLink
-                    >
+                    <RouterLink :to="{ name: 'about' }" id="about">
+                        <p class="header-text">About</p>
+                    </RouterLink>
                 </li>
                 <li>
-                    <RouterLink :to="{ name: 'works' }" id="works"
-                        >Works</RouterLink
-                    >
+                    <RouterLink :to="{ name: 'works' }" id="works">
+                        <p class="header-text">Works</p>
+                    </RouterLink>
                 </li>
                 <li>
-                    <RouterLink :to="{ name: 'projects' }" id="projects"
-                        >Projects</RouterLink
-                    >
+                    <RouterLink :to="{ name: 'projects' }" id="projects">
+                        <p class="header-text">Projects</p>
+                    </RouterLink>
                 </li>
                 <li>
-                    <RouterLink :to="{ name: 'contact' }" id="contact"
-                        >Contact</RouterLink
-                    >
+                    <RouterLink :to="{ name: 'contact' }" id="contact">
+                        <p class="header-text">Contact</p>
+                    </RouterLink>
                 </li>
             </ul>
         </nav>
@@ -36,8 +32,14 @@ import { RouterLink, RouterView } from "vue-router";
     <RouterView />
 </template>
 
-<style scoped>
+<script setup lang="ts">
+import { RouterLink, RouterView } from "vue-router";
+import { startListener } from "@/event/eventListener";
 
+startListener();
+</script>
+
+<style scoped>
 a {
     text-decoration: none;
     color: #222222;
@@ -61,6 +63,7 @@ header {
     justify-content: space-between;
     align-items: center;
     font-family: "Caveat", cursive;
+    background-color: #ffffff;
 }
 
 header #top-button {
@@ -92,5 +95,23 @@ nav li {
     display: flex;
     align-items: center;
     border-right: solid 1px #222222;
+}
+
+.header-text {
+    position: relative;
+    margin: 0;
+}
+.header-text::after {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: black;
+    transition: all 0.5s;
+    transform: scale(0, 0);
+}
+.header-text:hover::after {
+    transform: scale(1, 1);
 }
 </style>

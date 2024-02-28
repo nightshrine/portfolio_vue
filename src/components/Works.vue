@@ -26,7 +26,7 @@
 </template>
 
 <script setup lang="ts">
-import { getWorksInfoList } from "@/components/worksInfo";
+import { getWorksInfoList } from "@/data/worksInfo";
 import type { IWorksInfo } from "@/type/works";
 import { RouterView } from "vue-router";
 
@@ -48,13 +48,10 @@ const workInfoList: IWorksInfo[]  = getWorksInfoList();
     border-radius: 20px;
 }
 
-.work-content {
-}
 .work-image {
     width: 400px;
     height: 400px;
     margin: 0 auto;
 }
-.work-description {
-}
+
 </style>

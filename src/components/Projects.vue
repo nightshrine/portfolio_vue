@@ -45,7 +45,7 @@
 </template>
 
 <script setup lang="ts">
-import { getProjectsInfoList } from "@/components/projectsInfo";
+import { getProjectsInfoList } from "@/data/projectsInfo";
 import type { IProjectsInfo } from "@/type/projects";
 import { RouterView } from "vue-router";
 
@@ -70,9 +70,6 @@ const getImgPath = (imgPath: string) => {
     border-radius: 20px;
     padding-top: 10px;
     overflow: hidden;
-}
-
-.project-content {
 }
 
 .project-image {

@@ -1,0 +1,1 @@
+export const HEADER_FADE_HEIGHT = 50;

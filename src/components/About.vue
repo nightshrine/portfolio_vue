@@ -44,7 +44,7 @@
 
 <script setup lang="ts">
 import { RouterView } from "vue-router";
-import { getAboutInfoList, getHistoryInfoList } from "@/components/aboutInfo";
+import { getAboutInfoList, getHistoryInfoList } from "@/data/aboutInfo";
 import type { IAboutInfo, IHistoryInfo } from "@/type/about";
 
 const historyInfoList: IHistoryInfo[] = getHistoryInfoList();

@@ -63,8 +63,6 @@ import { RouterView } from "vue-router";
     box-shadow: 0px 0px 30px #222222;
 }
 
-#main #first-name {
-}
 #main #last-name {
     margin-left: 180px;
 }
