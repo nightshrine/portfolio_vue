@@ -14,7 +14,7 @@ export const getWorksInfoList = (): IWorksInfo[] => {
         {
             name: "株式会社プログメイト",
             urlName: "株式会社プログメイト",
-            url: "https://www.promate.co.jp/",
+            url: "https://biz.progmate.jp/",
             period: "2021年11月 - 現在",
             detail: "React + JSのTODOリスト制作や、JS + Laravelのイベント予約アプリの制作に携わりました。案件を行う際は個人開発という形でしたが、常にSlack上で社員の方と相談させていただけたことで、困ったことがあってもすぐに相談できたり、効率的な開発手法について随時学ぶことができ、とても貴重な経験となりました。",
             project: "TODOリスト、イベント予約アプリ",
