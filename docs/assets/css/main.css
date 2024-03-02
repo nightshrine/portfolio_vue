@@ -53,7 +53,7 @@ a:visited {
 
 /* ヘッダーの色が薄くなる場合、色が濃くなる場合 */
 .header-fade {
-    opacity: 0.3;
+    opacity: 0.2;
     animation: header-fade 0.5s ease-out;
 }
 .header-appear {
