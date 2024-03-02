@@ -9,8 +9,10 @@ export const pointerEvent = (domName: string) => {
         return;
     }
     dom.addEventListener("pointerenter", () => {
-        removeClassList("header", "header-fade");
-        addClassList("header", "header-appear");
+        if (window.scrollY > HEADER_FADE_HEIGHT) {
+            removeClassList("header", "header-fade");
+            addClassList("header", "header-appear");
+        }
     });
     dom.addEventListener("pointerleave", () => {
         if (window.scrollY > HEADER_FADE_HEIGHT) {
