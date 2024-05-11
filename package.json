@@ -5,12 +5,15 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "run-p type-check \"build-only {@}\" --",
+    "docs": "npm run build && npm run copy",
+    "build": "run-p type-check \"build-only {@}\"",
+    "copy": "cp -r src/assets/* docs/assets/",
     "preview": "vite preview",
     "build-only": "vite build",
     "type-check": "vue-tsc --build --force"
   },
   "dependencies": {
+    "axios": "^1.6.8",
     "vue": "^3.4.15",
     "vue-router": "^4.2.5"
   },
