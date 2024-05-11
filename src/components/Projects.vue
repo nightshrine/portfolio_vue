@@ -4,39 +4,44 @@
             <h2>Projects</h2>
         </div>
         <div class="content-text" id="projects-text">
-            ※詳しくは<a href="https://github.com/nightshrine"
+            ※詳しくは<a href="https://github.com/nightshrine" target="_blank"
                 >Githubのマイページ</a
             >をご覧ください。
             <p class="pre-text">
                 ※業務で作成した成果物については、実際の画面などを載せることができません。予めご了承ください。
             </p>
-            <div class="project-frame" v-for="projectInfo in projectsInfoList">
+            <div class="project-frame" v-for="project in projectList">
                 <div class="project-content">
-                    <div id="project-content-title">~{{ projectInfo.title }}~</div>
+                    <div id="project-content-title">~{{ project.title }}~</div>
                     <div class="project-image">
                         <img
-                            v-if="projectInfo.imgPath"
-                            :src="getImgPath(projectInfo.imgPath)"
+                            v-if="project.imgPath"
+                            :src="getImgPath(project.imgPath)"
                             height="300x"
                             alt="イメージ画像"
                         />
                     </div>
                     <div class="project-description">
                         <ul>
-                            <li v-if="projectInfo.urlItems"
-                                v-for="urlItem in projectInfo.urlItems">
-                                【参考URL】：<a v-bind:href="urlItem.url">
+                            <li
+                                v-if="project.urlItems"
+                                v-for="urlItem in project.urlItems"
+                            >
+                                【参考URL】：<a
+                                    v-bind:href="urlItem.url"
+                                    target="_blank"
+                                >
                                     {{ urlItem.urlName }}
                                 </a>
                             </li>
-                            <li>【概要】：{{ projectInfo.detail }}</li>
-                            <li>【利用技術】：{{ projectInfo.tech }}</li>
-                            <li>【成果】：{{ projectInfo.result }}</li>
+                            <li>【概要】：{{ project.detail }}</li>
+                            <li>【利用技術】：{{ project.tech }}</li>
+                            <li>【成果】：{{ project.result }}</li>
                         </ul>
                     </div>
                 </div>
             </div>
-            詳しくは<a href="https://github.com/nightshrine"
+            詳しくは<a href="https://github.com/nightshrine" target="_blank"
                 >Githubのマイページ</a
             >をご覧ください。
         </div>
@@ -45,11 +50,11 @@
 </template>
 
 <script setup lang="ts">
-import { getProjectsInfoList } from "@/data/projectsInfo";
-import type { IProjectsInfo } from "@/type/projects";
 import { RouterView } from "vue-router";
+import Master from "@/master";
+import type { IProject } from "@/type/master";
 
-const projectsInfoList: IProjectsInfo[] = getProjectsInfoList();
+const projectList: IProject[] = Master.projectList;
 
 const getImgPath = (imgPath: string) => {
     return new URL(imgPath, import.meta.url).href;
@@ -57,7 +62,6 @@ const getImgPath = (imgPath: string) => {
 </script>
 
 <style scoped>
-
 #project-content-title {
     font-size: 56px;
     margin: 10px auto;

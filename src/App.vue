@@ -34,9 +34,10 @@
 
 <script setup lang="ts">
 import { RouterLink, RouterView } from "vue-router";
-import { startListener } from "@/event/eventListener";
+import { Init } from "./Init";
 
-startListener();
+// 初期化処理
+Init.exec();
 </script>
 
 <style scoped>

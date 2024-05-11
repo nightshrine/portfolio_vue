@@ -1,37 +1,37 @@
 <template>
-    <div class="content" id="about">
+    <div class="content">
         <div class="content-title" id="about-title">
             <h2>About</h2>
         </div>
         <div class="content-text" id="about-text">
-            <div id="about-info">
+            <div id="about">
                 <ul>
                     <li
-                        id="about-info-list"
-                        v-for="aboutInfo in aboutInfoList"
-                        :key="aboutInfo.title"
+                        id="about-list"
+                        v-for="about in aboutList"
+                        :key="about.title"
                     >
-                        <p id="about-title">{{ aboutInfo.title }}：</p>
-                        <p id="about-text">{{ aboutInfo.text }}</p>
+                        <p id="about-title">{{ about.title }}：</p>
+                        <p id="about-text">{{ about.text }}</p>
                     </li>
                 </ul>
             </div>
             <h3>History</h3>
             <div id="dot-border"></div>
-            <div id="history-info-load">
+            <div id="history-load">
                 <div
-                    id="history-info"
-                    v-for="historyInfo in historyInfoList"
-                    :key="historyInfo.title"
+                    id="history"
+                    v-for="history in historyList"
+                    :key="history.title"
                 >
                     <div id="point-circle"></div>
                     <div id="history-content-title">
-                        {{ historyInfo.title }}
+                        {{ history.title }}
                     </div>
-                    <p>{{ historyInfo.text }}</p>
-                    <div v-if="historyInfo.url">
-                        参考リンク：<a :href="historyInfo.url">{{
-                            historyInfo.urlName
+                    <p>{{ history.text }}</p>
+                    <div v-if="history.url">
+                        参考リンク：<a :href="history.url" target="_blank">{{
+                            history.urlName
                         }}</a>
                     </div>
                 </div>
@@ -44,11 +44,11 @@
 
 <script setup lang="ts">
 import { RouterView } from "vue-router";
-import { getAboutInfoList, getHistoryInfoList } from "@/data/aboutInfo";
-import type { IAboutInfo, IHistoryInfo } from "@/type/about";
+import Master from "@/master";
+import type { IAbout, IHistory } from "@/type/master";
 
-const historyInfoList: IHistoryInfo[] = getHistoryInfoList();
-const aboutInfoList: IAboutInfo[] = getAboutInfoList();
+const historyList: IHistory[] = Master.historyList;
+const aboutList: IAbout[] = Master.aboutList;
 </script>
 
 <style scoped>
@@ -56,29 +56,29 @@ const aboutInfoList: IAboutInfo[] = getAboutInfoList();
     margin: 0 auto;
 }
 
-#about-info {
+#about {
     margin-bottom: 50px;
     padding: 20px;
     border-radius: 20px;
     box-shadow: 2px 3px 5px #222222;
 }
 
-#about-info-list {
+#about-list {
     margin: 0px 10px;
     display: flex;
     align-items: center;
 }
-#about-info-list #about-title {
+#about-list #about-title {
     width: 100px;
     margin: 0px 10px;
     margin-right: 30px;
 }
-#about-info-list #about-text {
+#about-list #about-text {
     margin: 0px 10px;
     margin-right: 20px;
 }
 
-#history-info-load {
+#history-load {
     padding-left: 100px;
     border-left: solid 5px #222222;
 }
@@ -93,7 +93,7 @@ const aboutInfoList: IAboutInfo[] = getAboutInfoList();
     border-left: dashed 5px #222222;
 }
 
-#history-info {
+#history {
     margin-bottom: 30px;
     padding: 20px;
     box-shadow: 2px 3px 5px #222222;
