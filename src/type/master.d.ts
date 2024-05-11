@@ -5,6 +5,7 @@ export interface IAbout {
 
 export interface IHistory {
     title: string;
+    monthYear: string;
     text: string;
     urlName?: string;
     url?: string;
