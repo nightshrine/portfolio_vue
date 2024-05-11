@@ -25,6 +25,9 @@
                     :key="history.title"
                 >
                     <div id="point-circle"></div>
+                    <div id="month-year">
+                        {{ history.monthYear }}
+                    </div>
                     <div id="history-content-title">
                         {{ history.title }}
                     </div>
@@ -88,17 +91,28 @@ const aboutList: IAbout[] = Master.aboutList;
     border-left: dashed 5px #222222;
 }
 #dot-border-last {
-    margin-top: -30px;
+    margin-top: -100px;
     height: 50px;
     border-left: dashed 5px #222222;
 }
 
 #history {
-    margin-bottom: 30px;
+    margin-bottom: 100px;
     padding: 20px;
     box-shadow: 2px 3px 5px #222222;
     border-radius: 20px;
     position: relative;
+}
+
+#month-year {
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    text-align: right;
+    font-size: 18px;
+    opacity: 0.8;
+    left: -270px;
+    top: 20px;
 }
 
 #point-circle {
@@ -107,7 +121,7 @@ const aboutList: IAbout[] = Master.aboutList;
     height: 50px;
     background-color: #222222;
     border-radius: 50%;
-    left: -129px;
+    left: -128px;
     top: 40px;
 }
 
