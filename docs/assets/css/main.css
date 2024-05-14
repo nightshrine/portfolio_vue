@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap");
 
 html {
     scroll-behavior: smooth;
@@ -48,7 +48,7 @@ a:visited {
 .content .pre-text {
     text-align: center;
     font-size: 18px;
-    color: #aaaaaa;
+    opacity: 0.5;
 }
 
 /* ヘッダーの色が薄くなる場合、色が濃くなる場合 */
