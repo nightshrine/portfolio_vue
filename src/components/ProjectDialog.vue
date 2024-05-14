@@ -102,6 +102,18 @@ const getImgPath = (imgPath: string) => {
     z-index: 110;
     box-shadow: 7px 7px 20px #222222;
     overflow-y: scroll;
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 #project-content-title {
