@@ -4,7 +4,7 @@ import { RouterView } from "vue-router";
 
 <template>
     <div class="content" id="contact">
-        <div class="content-title" id="contact-title">
+        <div class="content-title">
             <h2>Contact</h2>
         </div>
         <div class="content-text" id="contact-text">
