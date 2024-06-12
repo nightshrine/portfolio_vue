@@ -176,7 +176,7 @@
             "urlName": "株式会社スプーキーズ",
             "url": "https://spookies.co.jp/",
             "period": "2023年9月 - 現在",
-            "detail": "Vue3 + SpringBoot + Oracle + AWSでBtoBの業務アプリを開発しており、新規機能開発や拡張機能、バグ修正などを3~5人チームで行っています。使用しているコミュニケーションツールや業務ツールとしては、Gather、Slack、Redmine、ClickUp、Gitlabなどです。また、VanillaTSとLaravelを使った簡単なゲームアプリを経験しました。",
+            "detail": "Vue3 + SpringBoot + Oracle + AWSでBtoBの業務アプリを開発しており、新規機能開発や拡張機能、バグ修正などを3~5人チームで行っています。使用しているコミュニケーションツールや業務ツールとしては、Gather、Slack、Redmine、ClickUp、Gitlabなどです。また、VanillaTSとLaravelを使った簡単なゲームアプリを開発しました。",
             "project": "見積管理・支援システム、LINEブラウザでできるゲームアプリ",
             "tech": "Vue3、Java、TS、PHP、Laravel、MySQL、Oracle、AWS etc..."
         },
