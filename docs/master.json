@@ -59,6 +59,23 @@
     ],
     "projectList": [
         {
+            "title": "beatmania IIDX認識ゲーム（ランキング表示あり）",
+            "imgPath": "../assets/image/iidx_training_online.png",
+            "urlItems": [
+                {
+                    "urlName": "Github: iidx_training_online",
+                    "url": "https://github.com/nightshrine/iidx_training_online/"
+                },
+                {
+                    "urlName": "beatmania IIDXの譜面認識練習サイト",
+                    "url": "https://nightshrine.github.io/iidx_training_online/"
+                }
+            ],
+            "detail": "アーケード音楽ゲームであるbeatmania IIDXを、ブラウザで認識練習をできるようにしました。",
+            "tech": "TS、Vue、AWS etc...",
+            "result": "初めてAWSを使ってアプリ開発を行いました！AWSの仕組みを理解するのは多少時間がかかりましたが、サーバーレスで開発することの手軽さと楽しさを知ることができました！工夫した点としては、本家に見た目を近づけたことや、キーバインド設定にて、ボタンの名前を入力しなくても、対応する箇所のボタンを押せばキーバインドが行えるようにしたことが挙げられます。基本的に自分が使うアプリですが、ユーザーにとってどうあるのが一番嬉しいかを最優先で考えるように心がけて作成しました！"
+        },
+        {
             "title": "ポートフォリオ",
             "urlItems": [
                 {
