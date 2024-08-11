@@ -59,6 +59,23 @@
     ],
     "projectList": [
         {
+            "title": "Cloudflare + React + Honoのデモアプリ作成",
+            "imgPath": "../assets/image/erd_takeout_form.png",
+            "urlItems": [
+                {
+                    "urlName": "Cloudflareへデプロイしたデモアプリ",
+                    "url": "https://f491e443.erd-takeout-form.pages.dev/"
+                },
+                {
+                    "urlName": "Github（ブランチ「feature/6_cloud_flare_deploy」がデプロイ用のリポジトリ）",
+                    "url": "https://github.com/nightshrine/erd_takeout_form"
+                }
+            ],
+            "detail": "インターンにて、ReactとHonoを使う機会があったので、勉強ついでにCloudflare + React + Honoを使って、デモアプリを作成しました。",
+            "tech": "React、Hono、Cloudflare etc...",
+            "result": "Cloudflareの使い方や、ReactとHonoの連携方法を学びました。ORMとしてPrismaを利用しましたが、かなり癖があったので、WorkerでのPrisma Clientの使い方や、Seederの動かし方でかなり詰まってしまいました。環境変数の使い方もなかなか一筋縄では行かなかったので、もう少し簡単に利用できたら嬉しかったと思いました…。ただ、Honoを立ち上げてからCloudflareへデプロイするのがとても楽だったので、別のORMなども試しながら色々工夫したら、さまざまなアプリ開発に使用できると思いました！"
+        },
+        {
             "title": "beatmania IIDX認識ゲーム（ランキング表示あり）",
             "imgPath": "../assets/image/iidx_training_online.png",
             "urlItems": [
@@ -85,7 +102,7 @@
             ],
             "detail": "本サイト。技術的について今までやってきたことをまとめました！！",
             "tech": "Vue3、TS、etc...",
-            "result": "株式会社スプーキーズにてVue、TSをよく触っているため、その流れで本ポートフォリオを作成しました。工夫したところとしては、ポートフォリオで記載される内容はmaster.jsonにまとめ、GETAPIで取得した後にモジュールとして保存するという仕組みにしています。そうすることでデータに関するロジックはモジュールにまとめることができ、内容変更の際はjsonファイルのみを見れば良いことになるため、可読性や拡張性が高くなります。また、projectsではプロジェクトの数が多くなることを考えて小さく表示しておき、クリックで詳細が見える形にしています。"
+            "result": "株式会社スプーキーズにてVue、TSをよく触っているため、その流れで本ポートフォリオを作成しました。工夫したところとしては、ポートフォリオで記載される内容はmaster.jsonにまとめ、GETAPIで取得した後にモジュールとして保存するという仕組みにしています。そうすることでVue、TSファイルをデータ表示の部分としてまとめることができ、内容変更の際はjsonファイルのみを見れば良いことになるため、可読性や拡張性が高くなります。また、projectsではプロジェクトの数が多くなることを考えて小さく表示しておき、クリックで詳細が見える形にしています。"
         },
         {
             "title": "見積管理・支援システム",
